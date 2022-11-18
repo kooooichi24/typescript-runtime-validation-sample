@@ -1,2 +1,3 @@
-const message = "Hello World";
-console.log(message);
+export const post = (request: Definitions.CreateUserRequest) => {
+  console.log(request);
+};
