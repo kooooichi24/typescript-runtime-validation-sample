@@ -1,5 +1,5 @@
 import http, { IncomingMessage, ServerResponse } from "http";
-import { post } from ".";
+import { post } from "./controller";
 
 const server = http.createServer(
   (req: IncomingMessage, res: ServerResponse) => {
