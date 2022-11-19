@@ -9,6 +9,7 @@ import { ZodError, ZodObject } from "zod";
 export const validate = (schema: ZodObject<any>, data: unknown) => {
   try {
     schema.parse(data);
+    console.log("validation is successful");
   } catch (e: unknown) {
     if (e instanceof ZodError) {
       // handlel validation error
